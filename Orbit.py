@@ -13,6 +13,7 @@ def Send(username, avatar, content, webhook):
         print(Colorate.Horizontal(Colors.blue_to_cyan, "\nMessage Sent! Status Code: 200"))
     elif res.status_code == 429:
         print(Colorate.Horizontal(Colors.blue_to_cyan, "\nRate Limited! Status Code: 429"))
+        sleep(2)
     else:
         exit()
 
